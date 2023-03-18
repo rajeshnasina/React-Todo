@@ -1,0 +1,12 @@
+.bg-nav {
+    background-color: #9fc131;
+  } 
+
+/* .bg-nav-link {
+  background-color: blueviolet;
+} */
+
+.navbar-nav .nav-link.active {
+  color: white;
+  /* background-color: red; */
+}
