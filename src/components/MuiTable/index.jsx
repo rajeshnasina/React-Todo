@@ -3,15 +3,17 @@ import { useState, useEffect } from 'react';
 import { useContext } from 'react';
 import { userContext } from '../../Context';
 import MaterialTable from '@material-table/core';
+import { useRef } from 'react';
+import { DownloadTableExcel } from 'react-export-table-to-excel';
 function Mui(){
-  
+    const componentRef = useRef()
     const [data, setData] = useState([])
     // const [userList, setUserlist] = useState([]);
     // const [filterData, setFilterData] = useState([]) 
     const {theme, setTheme} = useContext(userContext)
     const style = theme && "dark" ;
     const columns = [
-      {title: "S.No", field:""},
+      
       { title: "ID", field: "id" },
       { title: "Title", field: "title" },
       { title: "Completed", field: "completed" },

@@ -33,7 +33,9 @@ const Index = () => {
   function handleClickOnBtn() {
     setTheme(!theme);
   }
-
+  // function download(){
+    
+  // }
 
   return (
     <>
@@ -48,6 +50,7 @@ const Index = () => {
             <Nav.Link as={NavLink} to="addtodo">AddTodo<Badge bg="danger">{MyTodoCount}</Badge></Nav.Link>
             <Nav.Link as={NavLink} to="mui">MuiTable</Nav.Link>
             <Nav.Link as={NavLink} to="temp">Temp</Nav.Link>
+            <Nav.Link as={NavLink} to="task">Task</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
@@ -58,6 +61,9 @@ const Index = () => {
       <Button onClick={handleClickOnBtn} variant="primary">
         toggle
       </Button>
+      {/* <Button onClick={download} variant="primary">
+        Download
+      </Button> */}
     </div>
   </Container>
     </>

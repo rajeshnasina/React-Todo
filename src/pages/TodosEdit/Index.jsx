@@ -22,6 +22,7 @@ const TodosEdit = () => {
   const [check,setCheck] = useState('Incompleted')
   const presentDate = new Date(); 
   const updatedTime = presentDate.toLocaleDateString();
+  
   // const createdat=new Date();
 const userInputs={
   title :title,
@@ -78,6 +79,7 @@ const userInputs={
       )
       .then((res)=>{
         console.log(res);
+        navigate("/")
         
       })
       .catch((er)=>{

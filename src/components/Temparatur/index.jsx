@@ -39,10 +39,10 @@ const Index = () => {
         <div className="my-5 temp">{temp}°C</div>
 
         <div >
-          <button className="mx-3" onClick={tempDecrement}>
+          <button className="mx-3 button" onClick={tempDecrement}>
             -
           </button>
-          <button className="mx-3" onClick={tempIncrement}>
+          <button className="mx-3 button" onClick={tempIncrement}>
             +
           </button>
         </div>

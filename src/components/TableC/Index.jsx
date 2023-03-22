@@ -8,6 +8,7 @@ import './index.css';
 import { getTodoCount } from "../../Reducers/MyReducer";
 import { useContext } from 'react';
 import { userContext } from '../../Context';
+import { DownloadTableExcel } from 'react-export-table-to-excel';
 
 
 const TableC = () => {
@@ -15,6 +16,7 @@ const TableC = () => {
   const navigatesTo = useNavigate();
   const [verifyDelete, setverifyDelete] = useState(false);
   const [deleteId, setDeleteId] = useState(false);
+  
   const dispatch=useDispatch()
 
   const {theme, setTheme} = useContext(userContext);
@@ -81,6 +83,7 @@ const TableC = () => {
   function renderTableData(data) {
     let tableRow = data.map((each,index) => {
       return (
+        
         <tr key={each.id} >
           <td>{index+1}</td>
           <td>{each.id}</td>

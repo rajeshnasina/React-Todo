@@ -10,7 +10,8 @@ import TodosEdit from './pages/TodosEdit/Index';
 import MuiTable from './components/MuiTable/index'; 
 import { userContext } from './Context';
 import { useState } from 'react';
-import Temparature from './components/Temparatur'
+import Temparature from './components/Temparatur';
+import Task from './components/Task';
 const App = () => {
   const [theme, setTheme] = useState(false);
   return (
@@ -25,6 +26,7 @@ const App = () => {
           {/* <Route path="*" element={<NoPage />}/> */}
           <Route path="mui" element={<MuiTable />}/> 
           <Route path="temp" element={<Temparature />}/>
+          <Route path="task" element={<Task />}/>
           
         </Route>
       </Routes>
